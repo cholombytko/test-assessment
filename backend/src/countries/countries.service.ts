@@ -37,7 +37,6 @@ export class CountriesService {
     const GET_COUNTRY_INFO_ENDPOINT = this.configService.get<string>(
       'GET_COUNTRY_INFO_ENDPOINT',
     );
-    console.log(GET_COUNTRY_INFO_ENDPOINT);
 
     const url = `${GET_COUNTRY_INFO_ENDPOINT}/${countryCode}`;
     const response: any = await this.httpService.get(
